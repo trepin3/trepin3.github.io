@@ -252,7 +252,7 @@ Want me to send over some sample shots?
 Best,
 [Your Name]
 Merchant Skyview Media
-(602) 561-9574
+(682) 561-9574
 merchantskyview.com
 FAA Part 107 Certified | $1M Insured
 ```
@@ -445,7 +445,7 @@ in [City], AZ 🏡
 [Describe one standout feature visible from the air]
 
 Want aerial photos for your next listing?
-📞 (602) 561-9574 | Link in bio
+📞 (682) 561-9574 | Link in bio
 
 #dronePhotography #[city]RealEstate #aerialPhotography
 #realEstatePhotography #justListed #arizona
@@ -473,7 +473,7 @@ Nothing beats hearing that our photos helped sell a
 property faster. That's what we're here for.
 
 Ready to elevate your listings?
-📞 (602) 561-9574
+📞 (682) 561-9574
 
 #clientLove #realEstateAgent #dronePhotography
 ```
@@ -488,7 +488,7 @@ Listings with professional aerial photography:
 ✅ Get 403% more inquiries (with video)
 
 Don't leave money on the table.
-📞 (602) 561-9574 | Link in bio
+📞 (682) 561-9574 | Link in bio
 
 #realEstateTips #realtorMarketing #dronePhotography
 ```
