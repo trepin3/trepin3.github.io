@@ -1,0 +1,90 @@
+/* ========================================
+   Merchant Skyview Media - Custom Styles
+   ======================================== */
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offset for sticky header */
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+/* CTA Pulse Animation */
+.pulse-cta {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(220, 38, 38, 0);
+  }
+}
+
+/* Portfolio hover zoom */
+.portfolio-item {
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  transition: transform 0.4s ease;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.08);
+}
+
+/* Counter animation - numbers fade in */
+.counter {
+  transition: opacity 0.3s ease;
+}
+
+/* Mobile menu transition */
+#mobile-menu {
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+
+/* Form focus states */
+input:focus,
+textarea:focus {
+  border-color: #1E3A5F;
+}
+
+/* Subtle entrance animation for sections */
+@media (prefers-reduced-motion: no-preference) {
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Pricing card hover */
+#pricing .bg-white {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#pricing .bg-white:hover {
+  transform: translateY(-4px);
+}
+
+/* Service area tile hover (handled by Tailwind but add smooth transition) */
+#areas .grid > div {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header shadow on scroll */
+#header.scrolled {
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
