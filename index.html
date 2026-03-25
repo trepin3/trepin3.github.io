@@ -127,6 +127,10 @@
     gtag('config', 'AW-XXXXXXXXXX');
   </script>
   -->
+
+  <!-- Calendly Popup Widget -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
 </head>
 <body class="bg-white text-gray-800 font-sans">
 
@@ -138,7 +142,6 @@
       <div class="flex items-center justify-between h-16 md:h-20">
         <!-- Logo + Name -->
         <a href="#" class="flex items-center space-x-2 flex-shrink-0">
-          <!-- Placeholder logo - replace with images/logo.png -->
           <div class="w-10 h-10 bg-brand-blue rounded-lg flex items-center justify-center">
             <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/>
@@ -154,7 +157,11 @@
           <a href="#portfolio" class="text-gray-600 hover:text-brand-blue transition-colors font-medium">Portfolio</a>
           <a href="#pricing" class="text-gray-600 hover:text-brand-blue transition-colors font-medium">Pricing</a>
           <a href="#areas" class="text-gray-600 hover:text-brand-blue transition-colors font-medium">Service Areas</a>
+          <a href="blog.html" class="text-gray-600 hover:text-brand-blue transition-colors font-medium">Blog</a>
           <a href="#contact" class="text-gray-600 hover:text-brand-blue transition-colors font-medium">Contact</a>
+          <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/YOUR_CALENDLY_URL'});return false;" class="bg-brand-amber hover:bg-yellow-500 text-white font-bold px-4 py-2 rounded-lg transition-colors text-sm">
+            Book Online
+          </button>
         </nav>
 
         <!-- Call Now Button + Mobile Menu -->
@@ -181,7 +188,11 @@
         <a href="#portfolio" class="block text-gray-600 hover:text-brand-blue font-medium mobile-nav-link">Portfolio</a>
         <a href="#pricing" class="block text-gray-600 hover:text-brand-blue font-medium mobile-nav-link">Pricing</a>
         <a href="#areas" class="block text-gray-600 hover:text-brand-blue font-medium mobile-nav-link">Service Areas</a>
+        <a href="blog.html" class="block text-gray-600 hover:text-brand-blue font-medium mobile-nav-link">Blog</a>
         <a href="#contact" class="block text-gray-600 hover:text-brand-blue font-medium mobile-nav-link">Contact</a>
+        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/YOUR_CALENDLY_URL'});return false;" class="w-full text-center bg-brand-amber hover:bg-yellow-500 text-white font-bold px-4 py-3 rounded-lg transition-colors">
+          Book Online
+        </button>
         <a href="tel:+16825619574" class="call-tracking block text-center bg-brand-red hover:bg-brand-red-dark text-white font-bold px-4 py-3 rounded-lg transition-colors">
           Call Now: (682) 561-9574
         </a>
@@ -233,33 +244,88 @@
   </section>
 
   <!-- ============================================ -->
-  <!-- 3. TRUST BAR                                 -->
+  <!-- 3. ENHANCED TRUST BAR                        -->
   <!-- ============================================ -->
-  <section class="bg-brand-blue text-white py-4">
+  <section class="bg-brand-blue text-white py-8">
     <div class="max-w-7xl mx-auto px-4">
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-        <div class="flex items-center justify-center space-x-2">
-          <svg class="w-5 h-5 text-brand-amber flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          <span class="text-sm font-semibold">FAA Part 107 Certified</span>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- FAA Certified -->
+        <div class="trust-badge bg-white/10 rounded-xl p-4 text-center">
+          <div class="w-12 h-12 bg-brand-amber/20 rounded-full flex items-center justify-center mx-auto mb-3">
+            <svg class="w-7 h-7 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+          </div>
+          <h3 class="font-bold text-sm">FAA Part 107 Certified</h3>
+          <p class="text-gray-300 text-xs mt-1">Licensed & legal</p>
         </div>
-        <div class="flex items-center justify-center space-x-2">
-          <svg class="w-5 h-5 text-brand-amber flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-          <span class="text-sm font-semibold">$1M Liability Insured</span>
+        <!-- $1M Insured -->
+        <div class="trust-badge bg-white/10 rounded-xl p-4 text-center">
+          <div class="w-12 h-12 bg-brand-amber/20 rounded-full flex items-center justify-center mx-auto mb-3">
+            <svg class="w-7 h-7 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+          </div>
+          <h3 class="font-bold text-sm">$1M Liability Insured</h3>
+          <p class="text-gray-300 text-xs mt-1">Full coverage</p>
         </div>
-        <div class="flex items-center justify-center space-x-2">
-          <svg class="w-5 h-5 text-brand-amber flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-          <span class="text-sm font-semibold">24-Hour Delivery</span>
+        <!-- 24-Hour Delivery -->
+        <div class="trust-badge bg-white/10 rounded-xl p-4 text-center">
+          <div class="w-12 h-12 bg-brand-amber/20 rounded-full flex items-center justify-center mx-auto mb-3">
+            <svg class="w-7 h-7 text-brand-amber" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-bold text-sm">24-Hour Delivery</h3>
+          <p class="text-gray-300 text-xs mt-1">Guaranteed turnaround</p>
         </div>
-        <div class="flex items-center justify-center space-x-2">
-          <svg class="w-5 h-5 text-brand-amber flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          <span class="text-sm font-semibold">5-Star Rated</span>
+        <!-- 5-Star Rated -->
+        <div class="trust-badge bg-white/10 rounded-xl p-4 text-center">
+          <div class="w-12 h-12 bg-brand-amber/20 rounded-full flex items-center justify-center mx-auto mb-3">
+            <svg class="w-7 h-7 text-brand-amber" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <h3 class="font-bold text-sm">5-Star Rated</h3>
+          <p class="text-gray-300 text-xs mt-1">47+ happy clients</p>
+        </div>
+      </div>
+      <!-- Turnaround Guarantee -->
+      <div class="text-center mt-6">
+        <p class="text-brand-amber font-semibold text-sm">
+          <svg class="w-4 h-4 inline mr-1 -mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          Turnaround Guarantee: Your edited files within 24 hours or the shoot is FREE
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 3b. TRUSTED BY / CLIENT LOGOS                -->
+  <!-- ============================================ -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <p class="text-gray-500 font-semibold uppercase tracking-wider text-sm">Trusted by Arizona's Top Real Estate Professionals</p>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
+        <!-- Placeholder logos - replace with actual client/partner logos -->
+        <div class="client-logo bg-gray-200 rounded-xl h-16 flex items-center justify-center">
+          <span class="text-gray-500 text-xs font-semibold">Your Logo</span>
+        </div>
+        <div class="client-logo bg-gray-200 rounded-xl h-16 flex items-center justify-center">
+          <span class="text-gray-500 text-xs font-semibold">Your Logo</span>
+        </div>
+        <div class="client-logo bg-gray-200 rounded-xl h-16 flex items-center justify-center">
+          <span class="text-gray-500 text-xs font-semibold">Your Logo</span>
+        </div>
+        <div class="client-logo bg-gray-200 rounded-xl h-16 flex items-center justify-center">
+          <span class="text-gray-500 text-xs font-semibold">Your Logo</span>
+        </div>
+        <div class="client-logo bg-gray-200 rounded-xl h-16 flex items-center justify-center">
+          <span class="text-gray-500 text-xs font-semibold">Your Logo</span>
+        </div>
+        <div class="client-logo bg-gray-200 rounded-xl h-16 flex items-center justify-center">
+          <span class="text-gray-500 text-xs font-semibold">Your Logo</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================ -->
-  <!-- 4. SERVICES                                  -->
+  <!-- 4. SERVICES (Expanded with Details)          -->
   <!-- ============================================ -->
   <section id="services" class="py-16 md:py-24 bg-gray-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -269,40 +335,76 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Aerial Photography -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow text-center">
+        <!-- Real Estate Photography -->
+        <div class="service-card bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow text-center">
           <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-7 h-7 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
           </div>
-          <h3 class="text-lg font-bold text-brand-blue mb-2">Aerial Photography</h3>
-          <p class="text-gray-600 text-sm">High-resolution drone photos that showcase properties from breathtaking angles. MLS-ready, edited, and delivered fast.</p>
+          <h3 class="text-lg font-bold text-brand-blue mb-2">Real Estate Photography</h3>
+          <p class="text-gray-600 text-sm mb-4">High-resolution drone photos that showcase properties from breathtaking angles. MLS-ready, edited, and delivered fast.</p>
+          <button class="service-expand-btn text-brand-red text-sm font-semibold hover:underline">Learn More +</button>
+          <div class="service-details hidden mt-4 text-left">
+            <ul class="text-gray-600 text-sm space-y-2">
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>MLS-ready photo formatting</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Professional color correction</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Multiple angles & elevations</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>High-res digital delivery</li>
+            </ul>
+          </div>
         </div>
 
         <!-- Aerial Videography -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow text-center">
+        <div class="service-card bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow text-center">
           <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-7 h-7 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
           </div>
-          <h3 class="text-lg font-bold text-brand-blue mb-2">Aerial Videography</h3>
-          <p class="text-gray-600 text-sm">Cinematic flyover videos with color grading and licensed music. Perfect for social media and listing pages.</p>
-        </div>
-
-        <!-- 360 Virtual Tours -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow text-center">
-          <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-            <svg class="w-7 h-7 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
+          <h3 class="text-lg font-bold text-brand-blue mb-2">Events & Venues</h3>
+          <p class="text-gray-600 text-sm mb-4">Cinematic flyover videos with color grading and licensed music. Perfect for social media and listing pages.</p>
+          <button class="service-expand-btn text-brand-red text-sm font-semibold hover:underline">Learn More +</button>
+          <div class="service-details hidden mt-4 text-left">
+            <ul class="text-gray-600 text-sm space-y-2">
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Weddings, festivals & concerts</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Venue showcase reels</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Social media vertical cuts</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Licensed background music</li>
+            </ul>
           </div>
-          <h3 class="text-lg font-bold text-brand-blue mb-2">360 Virtual Tours</h3>
-          <p class="text-gray-600 text-sm">Interactive aerial tours that let buyers explore properties remotely. Increase engagement and attract out-of-state buyers.</p>
         </div>
 
         <!-- Construction Progress -->
-        <div class="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow text-center">
+        <div class="service-card bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow text-center">
           <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4">
             <svg class="w-7 h-7 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/></svg>
           </div>
           <h3 class="text-lg font-bold text-brand-blue mb-2">Construction Progress</h3>
-          <p class="text-gray-600 text-sm">Regular aerial documentation of construction sites. Track progress, share updates with stakeholders, and create time-lapses.</p>
+          <p class="text-gray-600 text-sm mb-4">Regular aerial documentation of construction sites. Track progress, share updates with stakeholders, and create time-lapses.</p>
+          <button class="service-expand-btn text-brand-red text-sm font-semibold hover:underline">Learn More +</button>
+          <div class="service-details hidden mt-4 text-left">
+            <ul class="text-gray-600 text-sm space-y-2">
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Weekly/monthly progress reports</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Time-lapse compilation</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Stakeholder-ready documentation</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Bulk project discounts</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Roof Inspections -->
+        <div class="service-card bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-shadow text-center">
+          <div class="w-14 h-14 bg-brand-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+            <svg class="w-7 h-7 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+          </div>
+          <h3 class="text-lg font-bold text-brand-blue mb-2">Roof Inspections</h3>
+          <p class="text-gray-600 text-sm mb-4">Safe, detailed aerial roof inspections without ladders or scaffolding. Perfect for insurance claims and property assessments.</p>
+          <button class="service-expand-btn text-brand-red text-sm font-semibold hover:underline">Learn More +</button>
+          <div class="service-details hidden mt-4 text-left">
+            <ul class="text-gray-600 text-sm space-y-2">
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>High-res close-up imagery</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Damage & wear documentation</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Insurance-ready reports</li>
+              <li class="flex items-start"><svg class="w-4 h-4 text-brand-amber mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>Safe — no ladders needed</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -370,6 +472,37 @@
   </section>
 
   <!-- ============================================ -->
+  <!-- 6c. BEFORE/AFTER SLIDER                      -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">See the Difference</h2>
+        <p class="text-gray-600">Drag the slider to compare ground-level vs drone photography</p>
+      </div>
+
+      <div class="before-after-container relative rounded-2xl overflow-hidden shadow-xl select-none" style="aspect-ratio: 16/10;">
+        <!-- After image (drone view) — full width behind -->
+        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80" alt="Drone aerial view of property" class="absolute inset-0 w-full h-full object-cover">
+        <!-- Before image (ground level) — clipped -->
+        <div class="before-image absolute inset-0 overflow-hidden" style="width: 50%;">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=80" alt="Ground level view of property" class="absolute inset-0 w-full h-full object-cover" style="min-width: 100%; width: auto;">
+        </div>
+        <!-- Slider handle -->
+        <div class="slider-handle absolute top-0 bottom-0" style="left: 50%;">
+          <div class="absolute top-0 bottom-0 w-1 bg-white -translate-x-1/2 shadow-lg"></div>
+          <div class="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center cursor-ew-resize">
+            <svg class="w-5 h-5 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"/></svg>
+          </div>
+        </div>
+        <!-- Labels -->
+        <div class="absolute top-4 left-4 bg-black/60 text-white text-xs font-bold px-3 py-1 rounded-full">Ground Level</div>
+        <div class="absolute top-4 right-4 bg-brand-red text-white text-xs font-bold px-3 py-1 rounded-full">Drone View</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
   <!-- 6b. VIDEO SHOWCASE                           -->
   <!-- ============================================ -->
   <section class="py-16 md:py-24 bg-brand-blue">
@@ -409,7 +542,6 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Testimonial 1 - REPLACE with real testimonial -->
         <div class="bg-white rounded-2xl p-6 shadow-md">
           <div class="flex text-brand-amber mb-3">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -423,7 +555,6 @@
           <p class="text-gray-500 text-sm">Real Estate Agent, Scottsdale</p>
         </div>
 
-        <!-- Testimonial 2 - REPLACE with real testimonial -->
         <div class="bg-white rounded-2xl p-6 shadow-md">
           <div class="flex text-brand-amber mb-3">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -437,7 +568,6 @@
           <p class="text-gray-500 text-sm">Broker, Phoenix</p>
         </div>
 
-        <!-- Testimonial 3 - REPLACE with real testimonial -->
         <div class="bg-white rounded-2xl p-6 shadow-md">
           <div class="flex text-brand-amber mb-3">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -455,7 +585,7 @@
   </section>
 
   <!-- ============================================ -->
-  <!-- 8. HOW IT WORKS                              -->
+  <!-- 8. HOW IT WORKS (+ Book Online)              -->
   <!-- ============================================ -->
   <section class="py-16 md:py-24">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -465,24 +595,30 @@
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Step 1 -->
         <div class="text-center">
           <div class="w-16 h-16 bg-brand-amber rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">1</div>
           <h3 class="text-xl font-bold text-brand-blue mb-2">Book</h3>
           <p class="text-gray-600">Call or fill out our form. We'll schedule your shoot within 48 hours.</p>
         </div>
-        <!-- Step 2 -->
         <div class="text-center">
           <div class="w-16 h-16 bg-brand-amber rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">2</div>
           <h3 class="text-xl font-bold text-brand-blue mb-2">We Fly</h3>
           <p class="text-gray-600">Our FAA-certified pilot captures stunning footage of your property.</p>
         </div>
-        <!-- Step 3 -->
         <div class="text-center">
           <div class="w-16 h-16 bg-brand-amber rounded-full flex items-center justify-center mx-auto mb-4 text-white text-2xl font-bold">3</div>
           <h3 class="text-xl font-bold text-brand-blue mb-2">You Sell</h3>
           <p class="text-gray-600">Receive edited, MLS-ready files within 24 hours. List and sell faster.</p>
         </div>
+      </div>
+
+      <!-- Book Online Button -->
+      <div class="text-center mt-10">
+        <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/YOUR_CALENDLY_URL'});return false;" class="inline-flex items-center bg-brand-amber hover:bg-yellow-500 text-white font-bold text-lg px-8 py-4 rounded-xl transition-colors shadow-lg">
+          <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          Book Your Shoot Online
+        </button>
+        <p class="text-gray-500 text-sm mt-3">Or call us at <a href="tel:+16825619574" class="call-tracking text-brand-red font-semibold">(682) 561-9574</a></p>
       </div>
     </div>
   </section>
@@ -604,13 +740,123 @@
   </section>
 
   <!-- ============================================ -->
-  <!-- 10. SERVICE AREAS                            -->
+  <!-- 9b. FAQ SECTION                              -->
+  <!-- ============================================ -->
+  <section id="faq" class="py-16 md:py-24">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">Frequently Asked Questions</h2>
+        <p class="text-gray-600">Got questions? We've got answers.</p>
+      </div>
+
+      <div class="space-y-4">
+        <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between font-semibold text-brand-blue hover:bg-gray-50 transition-colors">
+            <span>Do you need FAA certification to fly drones?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-amber transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-4">
+            <p class="text-gray-600 text-sm">Yes! Commercial drone flights require FAA Part 107 certification. All our pilots are fully certified and maintain current credentials. You can rest easy knowing your shoot is 100% legal and compliant.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between font-semibold text-brand-blue hover:bg-gray-50 transition-colors">
+            <span>How far in advance should I book?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-amber transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-4">
+            <p class="text-gray-600 text-sm">We recommend booking 48 hours in advance, but we often accommodate same-day or next-day requests. For time-sensitive listings, give us a call and we'll do our best to fit you in.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between font-semibold text-brand-blue hover:bg-gray-50 transition-colors">
+            <span>What happens if the weather is bad?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-amber transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-4">
+            <p class="text-gray-600 text-sm">Safety comes first. If weather conditions are unsafe for flying (high winds, rain, storms), we'll reschedule your shoot at no extra cost to the next available clear day.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between font-semibold text-brand-blue hover:bg-gray-50 transition-colors">
+            <span>How do I receive my photos and videos?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-amber transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-4">
+            <p class="text-gray-600 text-sm">You'll receive a secure download link via email within 24 hours of your shoot. Files are delivered in high-resolution formats ready for MLS, social media, and print. We also keep your files backed up for 90 days.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between font-semibold text-brand-blue hover:bg-gray-50 transition-colors">
+            <span>Do you offer discounts for multiple properties?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-amber transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-4">
+            <p class="text-gray-600 text-sm">Absolutely! We offer volume discounts for agents who book multiple properties. Contact us for a custom quote — the more you book, the more you save.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-white rounded-xl shadow-md overflow-hidden">
+          <button class="faq-toggle w-full text-left px-6 py-4 flex items-center justify-between font-semibold text-brand-blue hover:bg-gray-50 transition-colors">
+            <span>What areas do you serve?</span>
+            <svg class="faq-icon w-5 h-5 text-brand-amber transition-transform flex-shrink-0 ml-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="faq-content hidden px-6 pb-4">
+            <p class="text-gray-600 text-sm">We proudly serve the entire Phoenix metro area including Scottsdale, Mesa, Chandler, Gilbert, Tempe, Surprise, Peoria, and Goodyear. We also travel to Tucson, Flagstaff, and Sedona. Contact us for locations outside these areas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 9c. LEAD MAGNET / EMAIL CAPTURE              -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-20 bg-brand-amber/10 border-y-4 border-brand-amber/30">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-block bg-brand-amber/20 rounded-full px-4 py-1 mb-4">
+        <span class="text-brand-amber font-bold text-sm uppercase tracking-wider">Free Guide</span>
+      </div>
+      <h2 class="text-2xl md:text-3xl font-bold text-brand-blue mb-3">7 Ways Aerial Photos Sell Properties Faster</h2>
+      <p class="text-gray-600 mb-8 max-w-xl mx-auto">Download our free guide and learn the proven strategies top agents use to close deals faster with drone photography.</p>
+
+      <form action="https://formspree.io/f/mpqjdgkr" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
+        <input type="hidden" name="_subject" value="Lead Magnet Download Request">
+        <input type="email" name="email" required placeholder="Enter your email address" class="flex-1 px-4 py-3 border-2 border-brand-amber/40 rounded-xl focus:ring-2 focus:ring-brand-amber focus:border-transparent outline-none transition text-center sm:text-left">
+        <button type="submit" class="bg-brand-red hover:bg-brand-red-dark text-white font-bold px-6 py-3 rounded-xl transition-colors whitespace-nowrap">
+          Download Free Guide
+        </button>
+      </form>
+      <p class="text-gray-400 text-xs mt-3">No spam, ever. Unsubscribe anytime.</p>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- 10. SERVICE AREAS (+ Google Map)             -->
   <!-- ============================================ -->
   <section id="areas" class="py-16 md:py-24">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">Service Areas</h2>
         <p class="text-gray-600 max-w-2xl mx-auto">Proudly serving real estate professionals across Arizona</p>
+      </div>
+
+      <!-- Google Maps Embed -->
+      <div class="rounded-2xl overflow-hidden shadow-lg mb-10">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851928.4564491251!2d-112.49756945!3d33.50413855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08fdda2dad7b%3A0x5c3a0f4e5c3a0f4e!2sPhoenix%20Metropolitan%20Area!5e0!3m2!1sen!2sus!4v1700000000000"
+          width="100%"
+          height="350"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Service area map - Phoenix metro area">
+        </iframe>
       </div>
 
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
@@ -672,7 +918,6 @@
         </div>
 
         <!-- Right: Form -->
-        <!-- UPDATE: Replace YOUR_FORMSPREE_ID with your actual Formspree form ID -->
         <form action="https://formspree.io/f/mpqjdgkr" method="POST" class="bg-white rounded-2xl p-6 md:p-8 shadow-xl">
           <h3 class="text-xl font-bold text-brand-blue mb-6">Get Your Free Quote</h3>
           <div class="space-y-4">
@@ -703,6 +948,54 @@
   </section>
 
   <!-- ============================================ -->
+  <!-- 11b. INSTAGRAM FEED                          -->
+  <!-- ============================================ -->
+  <section class="py-16 md:py-24 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-brand-blue mb-4">Follow Us on Instagram</h2>
+        <p class="text-gray-600">See our latest work and behind-the-scenes content</p>
+      </div>
+
+      <!-- Static Instagram-style grid (replace with live embed when ready) -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+        <a href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener noreferrer" class="instagram-tile aspect-square rounded-xl overflow-hidden relative group">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&q=80" alt="Aerial property photo" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener noreferrer" class="instagram-tile aspect-square rounded-xl overflow-hidden relative group">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=400&q=80" alt="Drone real estate photo" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener noreferrer" class="instagram-tile aspect-square rounded-xl overflow-hidden relative group">
+          <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&q=80" alt="Aerial property photography" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener noreferrer" class="instagram-tile aspect-square rounded-xl overflow-hidden relative group">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&q=80" alt="Drone photography showcase" loading="lazy" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300">
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors flex items-center justify-center">
+            <svg class="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </div>
+        </a>
+      </div>
+
+      <div class="text-center mt-8">
+        <!-- UPDATE: Replace YOUR_INSTAGRAM_HANDLE with your actual Instagram username -->
+        <a href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener noreferrer" class="inline-flex items-center bg-gradient-to-r from-purple-500 via-pink-500 to-orange-500 text-white font-bold px-6 py-3 rounded-xl hover:opacity-90 transition-opacity">
+          <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          Follow Us on Instagram
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
   <!-- 12. FOOTER                                   -->
   <!-- ============================================ -->
   <footer class="bg-brand-blue-dark text-gray-300 py-12">
@@ -723,6 +1016,7 @@
             <li><a href="#portfolio" class="hover:text-white transition-colors">Portfolio</a></li>
             <li><a href="#pricing" class="hover:text-white transition-colors">Pricing</a></li>
             <li><a href="#areas" class="hover:text-white transition-colors">Service Areas</a></li>
+            <li><a href="blog.html" class="hover:text-white transition-colors">Blog</a></li>
             <li><a href="#contact" class="hover:text-white transition-colors">Contact</a></li>
           </ul>
         </div>
@@ -737,7 +1031,6 @@
                 (682) 561-9574
               </a>
             </li>
-            <!-- UPDATE: Replace with real email -->
             <li>
               <a href="mailto:mmerch02@gmail.com" class="hover:text-white transition-colors flex items-center">
                 <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
@@ -749,19 +1042,18 @@
               Phoenix, AZ
             </li>
           </ul>
-          <!-- Social Links -->
+          <!-- Social Links - UPDATE: Replace # with your real social media URLs -->
           <div class="flex space-x-4 mt-4">
-            <!-- UPDATE: Replace # with real social links -->
-            <a href="#" class="hover:text-white transition-colors" aria-label="Instagram">
+            <a href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Instagram">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
             </a>
-            <a href="#" class="hover:text-white transition-colors" aria-label="Facebook">
+            <a href="https://www.facebook.com/YOUR_FACEBOOK_PAGE" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="Facebook">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
             </a>
-            <a href="#" class="hover:text-white transition-colors" aria-label="YouTube">
+            <a href="https://www.youtube.com/@YOUR_YOUTUBE_CHANNEL" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="YouTube">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
             </a>
-            <a href="#" class="hover:text-white transition-colors" aria-label="TikTok">
+            <a href="https://www.tiktok.com/@YOUR_TIKTOK_HANDLE" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="TikTok">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
             </a>
           </div>
@@ -769,10 +1061,18 @@
       </div>
 
       <div class="border-t border-gray-600 mt-8 pt-8 text-center text-sm">
-        <p>&copy; 2025 Merchant Skyview Media. All rights reserved. FAA Part 107 Certified. Fully Insured.</p>
+        <p>&copy; 2026 Merchant Skyview Media. All rights reserved. FAA Part 107 Certified. Fully Insured.</p>
       </div>
     </div>
   </footer>
+
+  <!-- ============================================ -->
+  <!-- FLOATING TEXT US BUTTON                      -->
+  <!-- ============================================ -->
+  <a href="sms:+16825619574" class="floating-text-btn fixed bottom-6 right-6 z-50 bg-brand-red hover:bg-brand-red-dark text-white font-bold px-5 py-3 rounded-full shadow-lg flex items-center space-x-2 transition-colors" aria-label="Text us">
+    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+    <span class="text-sm hidden sm:inline">Text Us</span>
+  </a>
 
   <!-- Scripts -->
   <script src="script.js"></script>

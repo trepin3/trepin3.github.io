@@ -88,3 +88,118 @@ textarea:focus {
 #header.scrolled {
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
+
+/* ========================================
+   Floating Text Us Button
+   ======================================== */
+.floating-text-btn {
+  animation: float-pulse 2s ease-in-out infinite;
+}
+
+@keyframes float-pulse {
+  0%, 100% {
+    box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
+  }
+  50% {
+    box-shadow: 0 4px 25px rgba(220, 38, 38, 0.6);
+  }
+}
+
+/* ========================================
+   Trust Badges
+   ======================================== */
+.trust-badge {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.trust-badge:hover {
+  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* ========================================
+   Client Logos
+   ======================================== */
+.client-logo {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.client-logo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* ========================================
+   Before/After Slider
+   ======================================== */
+.before-after-container {
+  cursor: ew-resize;
+  touch-action: none;
+}
+
+.before-image {
+  will-change: width;
+}
+
+.before-image img {
+  min-width: 0;
+  width: 100%;
+  /* Keep the image from being clipped wrong — stretch to full container */
+}
+
+.slider-handle {
+  will-change: left;
+}
+
+/* ========================================
+   FAQ Accordion
+   ======================================== */
+.faq-item {
+  transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-icon {
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-content.visible {
+  max-height: 300px;
+}
+
+/* ========================================
+   Service Card Expand
+   ======================================== */
+.service-details {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.service-details.visible {
+  max-height: 400px;
+}
+
+/* ========================================
+   Instagram Tiles
+   ======================================== */
+.instagram-tile {
+  transition: transform 0.3s ease;
+}
+
+.instagram-tile:hover {
+  transform: scale(1.02);
+}

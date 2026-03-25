@@ -130,4 +130,106 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---- FAQ Accordion ----
+  document.querySelectorAll('.faq-toggle').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.closest('.faq-item');
+      const content = item.querySelector('.faq-content');
+      const isActive = item.classList.contains('active');
+
+      // Close all other FAQ items
+      document.querySelectorAll('.faq-item.active').forEach(openItem => {
+        if (openItem !== item) {
+          openItem.classList.remove('active');
+          const openContent = openItem.querySelector('.faq-content');
+          openContent.classList.remove('visible');
+          openContent.classList.add('hidden');
+        }
+      });
+
+      // Toggle this item
+      if (isActive) {
+        item.classList.remove('active');
+        content.classList.remove('visible');
+        setTimeout(() => content.classList.add('hidden'), 300);
+      } else {
+        item.classList.add('active');
+        content.classList.remove('hidden');
+        // Trigger reflow before adding visible class for transition
+        content.offsetHeight;
+        content.classList.add('visible');
+      }
+    });
+  });
+
+  // ---- Service Card Expand/Collapse ----
+  document.querySelectorAll('.service-expand-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.service-card');
+      const details = card.querySelector('.service-details');
+      const isVisible = details.classList.contains('visible');
+
+      if (isVisible) {
+        details.classList.remove('visible');
+        setTimeout(() => details.classList.add('hidden'), 300);
+        btn.textContent = 'Learn More +';
+      } else {
+        details.classList.remove('hidden');
+        details.offsetHeight;
+        details.classList.add('visible');
+        btn.textContent = 'Show Less -';
+      }
+    });
+  });
+
+  // ---- Before/After Slider ----
+  const container = document.querySelector('.before-after-container');
+  if (container) {
+    const beforeImage = container.querySelector('.before-image');
+    const handle = container.querySelector('.slider-handle');
+    let isDragging = false;
+
+    const updateSlider = (x) => {
+      const rect = container.getBoundingClientRect();
+      let position = (x - rect.left) / rect.width;
+      position = Math.max(0.05, Math.min(0.95, position));
+      const percent = position * 100;
+      beforeImage.style.width = percent + '%';
+      handle.style.left = percent + '%';
+    };
+
+    // Mouse events
+    container.addEventListener('mousedown', (e) => {
+      isDragging = true;
+      updateSlider(e.clientX);
+      e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (isDragging) {
+        updateSlider(e.clientX);
+      }
+    });
+
+    document.addEventListener('mouseup', () => {
+      isDragging = false;
+    });
+
+    // Touch events
+    container.addEventListener('touchstart', (e) => {
+      isDragging = true;
+      updateSlider(e.touches[0].clientX);
+    }, { passive: true });
+
+    document.addEventListener('touchmove', (e) => {
+      if (isDragging) {
+        updateSlider(e.touches[0].clientX);
+      }
+    }, { passive: true });
+
+    document.addEventListener('touchend', () => {
+      isDragging = false;
+    });
+  }
+
 });

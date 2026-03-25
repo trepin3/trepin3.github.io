@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | Merchant Skyview Media</title>
+  <meta name="description" content="Premium drone videography portfolio by Merchant Skyview Media. Cinematic aerial content for real estate, commercial, and luxury properties across Arizona.">
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="portfolio.css">
+  <!-- Google Fonts — Inter + Playfair Display for luxury feel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- NAVIGATION                                   -->
+  <!-- ============================================ -->
+  <nav id="nav" class="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="nav-logo-text">MSM</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="tel:+16825619574" class="nav-cta">Book Now</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================ -->
+  <!-- HERO / LANDING                               -->
+  <!-- ============================================ -->
+  <section id="hero" class="hero">
+    <div class="hero-bg">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto">
+        <source src="videos/hero-bg.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="hero-badge-line"></span>
+        <span class="hero-badge-text">Aerial Cinematography</span>
+        <span class="hero-badge-line"></span>
+      </div>
+      <h1 class="hero-title reveal reveal-delay-1">
+        Merchant<br>Skyview Media
+      </h1>
+      <p class="hero-subtitle reveal reveal-delay-2">Premium Drone Media</p>
+      <div class="hero-actions reveal reveal-delay-3">
+        <a href="#work" class="btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn-outline">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span class="hero-scroll-text">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- PORTFOLIO INTRO                              -->
+  <!-- ============================================ -->
+  <section class="portfolio-intro">
+    <div class="container">
+      <div class="intro-content reveal">
+        <span class="section-tag">Selected Work</span>
+        <h2 class="intro-heading">Every frame,<br>crafted with precision.</h2>
+        <p class="intro-text">A curated selection of aerial projects showcasing cinematic drone videography for real estate, commercial properties, and beyond.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- PROJECTS / PORTFOLIO                         -->
+  <!-- ============================================ -->
+  <section id="work" class="projects">
+
+    <!-- PROJECT 1 — School -->
+    <div class="project reveal" data-project="01">
+      <div class="project-header">
+        <div class="project-number">01</div>
+        <div class="project-meta">
+          <span class="project-category">Commercial</span>
+          <span class="project-divider"></span>
+          <span class="project-type">Aerial Tour</span>
+        </div>
+      </div>
+      <div class="project-video-wrap">
+        <video
+          class="project-video"
+          playsinline
+          muted
+          loop
+          preload="metadata"
+          poster=""
+        >
+          <source src="videos/project-school.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay" data-playing="false">
+          <button class="play-btn" aria-label="Play video">
+            <svg viewBox="0 0 24 24" fill="none">
+              <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Campus Aerial Overview</h3>
+        <p class="project-desc">Cinematic aerial tour capturing the full scope and setting of a modern educational campus.</p>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 — House 1 -->
+    <div class="project reveal" data-project="02">
+      <div class="project-header">
+        <div class="project-number">02</div>
+        <div class="project-meta">
+          <span class="project-category">Residential</span>
+          <span class="project-divider"></span>
+          <span class="project-type">Property Showcase</span>
+        </div>
+      </div>
+      <div class="project-video-wrap">
+        <video
+          class="project-video"
+          playsinline
+          muted
+          loop
+          preload="metadata"
+          poster=""
+        >
+          <source src="videos/project-house-1.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay" data-playing="false">
+          <button class="play-btn" aria-label="Play video">
+            <svg viewBox="0 0 24 24" fill="none">
+              <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Modern Luxury Residence</h3>
+        <p class="project-desc">Sweeping drone footage showcasing architecture, landscaping, and neighborhood context.</p>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 — Park -->
+    <div class="project reveal" data-project="03">
+      <div class="project-header">
+        <div class="project-number">03</div>
+        <div class="project-meta">
+          <span class="project-category">Commercial</span>
+          <span class="project-divider"></span>
+          <span class="project-type">Landscape Flyover</span>
+        </div>
+      </div>
+      <div class="project-video-wrap">
+        <video
+          class="project-video"
+          playsinline
+          muted
+          loop
+          preload="metadata"
+          poster=""
+        >
+          <source src="videos/project-park.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay" data-playing="false">
+          <button class="play-btn" aria-label="Play video">
+            <svg viewBox="0 0 24 24" fill="none">
+              <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Scenic Park Aerial</h3>
+        <p class="project-desc">Bird's-eye perspective highlighting open spaces, greenery, and surrounding community.</p>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 — House 2 -->
+    <div class="project reveal" data-project="04">
+      <div class="project-header">
+        <div class="project-number">04</div>
+        <div class="project-meta">
+          <span class="project-category">Residential</span>
+          <span class="project-divider"></span>
+          <span class="project-type">Property Showcase</span>
+        </div>
+      </div>
+      <div class="project-video-wrap">
+        <video
+          class="project-video"
+          playsinline
+          muted
+          loop
+          preload="metadata"
+          poster=""
+        >
+          <source src="videos/project-house-2.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay" data-playing="false">
+          <button class="play-btn" aria-label="Play video">
+            <svg viewBox="0 0 24 24" fill="none">
+              <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Executive Estate Flyover</h3>
+        <p class="project-desc">Premium aerial footage revealing the full scale and luxury of a private residence.</p>
+      </div>
+    </div>
+
+    <!-- PROJECT 5 — Apartment -->
+    <div class="project reveal" data-project="05">
+      <div class="project-header">
+        <div class="project-number">05</div>
+        <div class="project-meta">
+          <span class="project-category">Multi-Family</span>
+          <span class="project-divider"></span>
+          <span class="project-type">Property Showcase</span>
+        </div>
+      </div>
+      <div class="project-video-wrap">
+        <video
+          class="project-video"
+          playsinline
+          muted
+          loop
+          preload="metadata"
+          poster=""
+        >
+          <source src="videos/project-apartment.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay" data-playing="false">
+          <button class="play-btn" aria-label="Play video">
+            <svg viewBox="0 0 24 24" fill="none">
+              <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Luxury Apartment Complex</h3>
+        <p class="project-desc">Elevated perspective capturing the scale, amenities, and appeal of modern apartment living.</p>
+      </div>
+    </div>
+
+    <!--
+    ===================================================
+    HOW TO ADD MORE PROJECTS:
+    ===================================================
+    Copy the block below, paste it after the last project
+    above, and update:
+      1. data-project="06" (increment the number)
+      2. The project-number to "06"
+      3. The video source src path
+      4. The project-category and project-type
+      5. The project-title and project-desc
+
+    <div class="project reveal" data-project="06">
+      <div class="project-header">
+        <div class="project-number">06</div>
+        <div class="project-meta">
+          <span class="project-category">Category</span>
+          <span class="project-divider"></span>
+          <span class="project-type">Type</span>
+        </div>
+      </div>
+      <div class="project-video-wrap">
+        <video class="project-video" playsinline muted loop preload="metadata">
+          <source src="videos/your-new-video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay" data-playing="false">
+          <button class="play-btn" aria-label="Play video">
+            <svg viewBox="0 0 24 24" fill="none">
+              <polygon points="5,3 19,12 5,21" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="project-info">
+        <h3 class="project-title">Your Project Title</h3>
+        <p class="project-desc">One sentence description of the project.</p>
+      </div>
+    </div>
+    ===================================================
+    -->
+
+  </section>
+
+  <!-- ============================================ -->
+  <!-- STATS / CREDIBILITY BAR                      -->
+  <!-- ============================================ -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat reveal">
+          <span class="stat-number">FAA</span>
+          <span class="stat-label">Part 107 Certified</span>
+        </div>
+        <div class="stat-line"></div>
+        <div class="stat reveal reveal-delay-1">
+          <span class="stat-number">$1M</span>
+          <span class="stat-label">Liability Insured</span>
+        </div>
+        <div class="stat-line"></div>
+        <div class="stat reveal reveal-delay-2">
+          <span class="stat-number">24hr</span>
+          <span class="stat-label">Delivery Guaranteed</span>
+        </div>
+        <div class="stat-line"></div>
+        <div class="stat reveal reveal-delay-3">
+          <span class="stat-number">5.0</span>
+          <span class="stat-label">Client Rating</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- CONTACT                                      -->
+  <!-- ============================================ -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="contact-inner reveal">
+        <span class="section-tag">Let's Work Together</span>
+        <h2 class="contact-heading">Ready to elevate<br>your property?</h2>
+        <p class="contact-text">Available for real estate, commercial, and event projects across Arizona.</p>
+
+        <div class="contact-details">
+          <a href="tel:+16825619574" class="contact-item">
+            <span class="contact-label">Phone</span>
+            <span class="contact-value">(682) 561-9574</span>
+          </a>
+          <a href="mailto:mmerchant698@gmail.com" class="contact-item">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">mmerchant698@gmail.com</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Phoenix, Arizona</span>
+          </div>
+        </div>
+
+        <div class="contact-actions">
+          <a href="tel:+16825619574" class="btn-primary btn-lg">Book a Shoot</a>
+          <a href="mailto:mmerchant698@gmail.com" class="btn-outline btn-lg">Send a Message</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER                                       -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <span class="footer-logo">Merchant Skyview Media</span>
+          <span class="footer-tagline">Premium Drone Media</span>
+        </div>
+        <div class="footer-links">
+          <!-- UPDATE: Replace with your real social media URLs -->
+          <a href="https://www.instagram.com/YOUR_INSTAGRAM_HANDLE" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@YOUR_TIKTOK_HANDLE" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@YOUR_YOUTUBE_CHANNEL" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+        </div>
+        <div class="footer-copy">
+          &copy; 2026 Merchant Skyview Media. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="portfolio.js"></script>
+</body>
+</html>
